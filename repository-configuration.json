@@ -1,0 +1,98 @@
+{
+    "gammaAccess": {
+        "url": "",
+        "token": ""
+    },
+    "repositories": [
+        {
+            "dataDir": "$WORKSPACE/demo",
+            "repository": {
+                "uid": "db37cdd00cc1f9df482c4aaa035248b9",
+                "projectName": "AdminLTE",
+                "languages": [
+                    "PHP"
+                ],
+                "sources": {
+                    "baseDir": "$WORKSPACE",
+                    "exclusions": [
+                        "vendor",
+                        "wp-content/plugins",
+                        "protected/extensions",
+                        "test"
+                    ]
+                }
+            },
+            "settings": {
+                "additionalOptions": [],
+                "includePaths": []
+            },
+            "modules": {
+                "codeissues": [
+                    {
+                        "name": "gamma_generic",
+                        "enabled": false,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "reportDir",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "phpcs",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": []
+                        }
+                    },
+                    {
+                        "name": "phpmd",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "RuleSets",
+                                    "type": "multiselect",
+                                    "value": [
+                                        "cleancode",
+                                        "codesize",
+                                        "controversial",
+                                        "design",
+                                        "naming",
+                                        "unusedcode"
+                                    ],
+                                    "choices": [
+                                        "cleancode",
+                                        "codesize",
+                                        "controversial",
+                                        "design",
+                                        "naming",
+                                        "unusedcode"
+                                    ],
+                                    "required": true
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "relevance": [
+                    {
+                        "name": "relevance",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": []
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
